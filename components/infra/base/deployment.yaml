@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: infra
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/infra/infra@sha256:b82f511ab42f0ab70945d866e6c5e7d542a1eb058dd334c47753eb95573f05be
         imagePullPolicy: Always
         name: container-image
         ports:
