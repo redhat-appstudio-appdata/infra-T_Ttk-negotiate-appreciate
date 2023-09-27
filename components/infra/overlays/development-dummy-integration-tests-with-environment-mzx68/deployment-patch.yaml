@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: infra
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-acs-tenant/infra/infra@sha256:1a9b41d9cf6feb702e2c70cfde7c68ea8310d7c06e981207510c31c5543c00a7
+        name: container-image
+        resources: {}
+status: {}
